@@ -6,7 +6,141 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+    <header class="main-header">
+      <a class="logo"><img src="#" alt="Логотип"></a>
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li><a href="#"></a>Каталог</li>
+          <li><a href="#"></a>Доставка и оплата</li>
+          <li><a href="#"></a>О компании</li>
+        </ul>
+        <ul class="user-navigation">
+           <li><a class="search-link" href="#">Поиск</a></li>
+           <li><a class="login-link" href="#">Вход</a></li>
+           <li><a class="cart-link" href="#">Корзина</a></li>
+        </ul>
+      </nav>
+      <p>С 10 до 20, ежедневно</p>
+      <p>8 812 450-25-25</p>
+    </header>
+
+    <main class="container">
+
+      <h1 class="visually-hidden">Магазин мороженого Глэйси</h1>
+
+      <section class="slider">
+        <h2 class="visually-hidden">Промо двойное предложение</h2>
+        <div class="slider-controls">
+          <label for="product-1">Первый</label>
+          <label for="product-2">Второй</label>
+          <label for="product-3">Третий</label>
+        </div>
+        <ul class="slider-list">
+          <li class="slider-item slide" id="slide1">
+            <h3 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h3>
+            <a class="button slide-button" href="#">Давайте оба!</a>
+          </li>
+          <li class="slider-item slide" id="slide2">
+            <h3 class="slide-title">Шоколадный пломбир и лимонный сорбет</h3>
+            <a class="button slide-button" href="#">Давайте оба!</a>
+          </li>
+          <li class="slider-item slide" id="slide3">
+            <h3 class="slide-title">Пломбир с помадкой и клубничный щербет</h3>
+            <a class="button slide-button" href="#">Давайте оба!</a>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="visually-hidden">Промоакция малиновое варенье</h2>
+        <h3>Малинка даром!</h3>
+        <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+        <a class="button main-button" href="#">Хочу варенье!</a>
+      </section>
+
+      <section>
+        <h2 class="visually-hidden">Промоакция шоколадная присыпка</h2>
+        <h3>Шоколадки даром!</h3>
+        <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+        <a class="button main-button" href="#">Хочу шоколадки!</a>
+      </section>
+
+      <section>
+        <h2 class="visually-hidden">Хиты продаж</h2>
+
+        <p>310 <span>знак рубля</span> / <span>кг</span></p>
+        <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+
+        <p>380 <span>знак рубля</span> / <span>кг</span></p>
+        <p>Сливочно-кофейное с кусочками шоколада</p>
+
+        <p>355 <span>знак рубля</span> / <span>кг</span></p>
+        <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+
+        <p>415 <span>знак рубля</span> / <span>кг</span></p>
+        <p>Сливочное крем-брюле с карамельной подливкой</p>
+      </section>
+
+      <section>
+        <h2 class="visually hidden">О магазине Глэйси</h2>
+        <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
+        <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+        <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+        <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+        <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+      </section>
+
+      <article>
+        <h2 class="visually hidden">Анос блога</h2>
+        <h3>Новое в нашем блоге</h3>
+        <a>10 способов сервировки фруктовых щербетов к столу</a>
+      </article>
+
+      <section>
+        <h2 class="visually hidden">Подписка на рассылку</h2>
+        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+        <!-- ФОРМА ПОДПИСКИ НА РАССЫЛКУ -->
+      </section>
+
+      <section>
+        <h2 class="visually hidden">Карта с местоположением магазина и офиса</h2>
+        <section>
+          <h2 class="visually hidden">Адрес и форма обратной связи</h2>
+          <p>Адрес главного офиса и офлайн-магазина:
+          <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+          Для заказов по телефону:
+          <b>8 812 450-25-25</b>
+          (с 10 до 20 ежедневно)</p>
+          <a class="button main-button" href="#">Форма обратной связи</a>
+        </section>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <ul>
+        <li><a class="social-button" href="#">
+          <span class="visually-hidden">Твиттер</span>
+        </li>
+        <li><a class="social-button" href="#">
+          <span class="visually-hidden">Инстаграм</span>
+        </li>
+        <li><a class="social-button" href="#">
+          <span class="visually-hidden">Фэйсбук</span>
+        </li>
+        <li><a class="social-button" href="#">
+          <span class="visually-hidden">Вконтакте</span>
+        </li>
+      </ul>
+      <p>
+        <span>heart</span><a href="#">Для поставщиков</a>
+        <a href="#">Наши документы</a>
+        <a href="#">О производстве</a>
+        <a href="#">Экологические стандарты</a>
+      </p>
+      <p>
+        <span>Сделано в</span> <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+      </p>
+    </footer>
 
   </body>
 </html>
