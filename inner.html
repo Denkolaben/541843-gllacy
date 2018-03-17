@@ -13,22 +13,41 @@
       </a>
       <nav class="main-navigation">
         <ul class="site-navigation">
-          <li><a href="#"></a>Каталог</li>
-          <li><a href="#"></a>Доставка и оплата</li>
-          <li><a href="#"></a>О компании</li>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">О компании</a></li>
         </ul>
       </nav>
       <nav class="interface-navigation">
         <ul class="user-navigation">
            <li><a class="search-link" href="#">
-             <svg width="17" height="17"><use xlink:href="#magnifier-icon"/></svg>
-           </a></li>
+               <svg width="17" height="17"><use xlink:href="#magnifier-icon"/></svg>
+               </a>
+               <label>Что ищем?<input name="search-window" placeholder="Что ищем?" type="text"></label>
+           </li>
            <li><a class="login-link" href="#">
-             <svg width="21" height="19"><use xlink:href="#enter-icon"/></svg>
-             Вход</a></li>
+                 <svg width="21" height="19"><use xlink:href="#enter-icon"/></svg>
+                 Вход
+                 </a>
+                 <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                   <label>Электронная почта<input name="email" type="email" placeholder="Электронная почта"></label>
+                   <label>Пароль<input name="password" type="password" placeholder="Пароль"></label>
+                   <button class="button main-button" type="submit">Войти</button>
+                   <a href="#">Забыли пароль?</a>
+                   <a href="#">Новая регистрация</a>
+                </form>
+           </li>
            <li><a class="cart-link" href="#">
              <svg width="21" height="20"><use xlink:href="#cart-icon"/></svg>
-             2 товара</a></li>
+             2 товара</a>
+             <section class="cart-detailed">
+              <p><span>X</span><img src="img/1-row-1-icecream.jpg" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"> Пломбир с апельсиновым джемом 1,5 кг х <span>200 руб.</span> 300 руб.</p>
+              <p><span>X</span><img src="img/1-row-3-icecream.jpg" width="33" height="33" alt="Сливочно-клубничное с присыпкой из белого шоколада"> Клубничный пломбир с присыпкой из белого шоколада 1,5 кг х <span>300 руб.</span> 450 руб.</p>
+              <hr>
+              <b>Итого: 750 руб.</b>
+              <a class="button main-button" href="#">Оформить заказ</a>
+             </section>
+           </li>
         </ul>
         <!-- Разметка корзины -->
       </nav>
