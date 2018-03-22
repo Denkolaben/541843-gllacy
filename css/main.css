@@ -15,6 +15,14 @@ a {
     text-decoration: none;
 }
 
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
 .main-navigation {
     line-height: 18px;
 }
@@ -25,14 +33,32 @@ a {
     list-style: none;
 }
 
+/*.site-navigation a {
+    display: inline-block;
+    vertical-align: middle;
+}*/
+
+/*.catalog-button:hover {
+    width: 87px;
+    background-color: #f7f6f3;
+    border-radius: 50%;
+}*/
+
 .site-navigation a,
-.catalog a,
 .user-navigation a {
     color: #ffffff;
 }
 
-.site-navigation > li > a {
+/*.site-navigation > li > a {
     border-bottom: 1px solid #adbdb4;
+}*/
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: #333333;
+    background-color: #f8f7f4;
+    border-radius: 16px;
+    text-decoration: none;
 }
 
 .site-navigation > li > a:active {
@@ -41,19 +67,196 @@ a {
     background-color: #f8f7f4;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus,
-.catalog a:hover,
-.catalog a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
-    color: #333333;
-    background-color: #f8f7f4;
+.site-navigation .active-link {
+    background-color: #d07058;
+    border-bottom: none;
 }
 
-.site-navigation a:hover,
-.catalog a:hover,
-.user-navigation a:hover {
-    color: #333333;
-    background-color: #f8f7f4;
+
+
+.catalog a:active {
+    background-color: #f6b5a5;
 }
+
+.user-navigation a {
+    background-color: #a1b6aa;
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus {
+    background-color: #f8f7f4;
+    color: #000000;
+}
+
+
+
+.search-link {
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+
+
+.search-form {
+    display: none;
+}
+
+.user-navigation >li:hover .search-form {
+    display: block;
+}
+
+.login-form {
+    position: absolute;
+    display: none;
+}
+
+.user-navigation >li:hover .login-form {
+    display: block;
+}
+
+.wrap-logo {
+  margin-top: 9px;
+  margin-left: 27px;
+}
+
+.main-header {
+  display: flex;
+}
+
+.site-navigation {
+    width: 349px;
+    margin-top: 23px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.catalog-button {
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #a1b5aa;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 87px;
+}
+
+.catalog-button::after {
+    content: "";
+}
+
+.catalog {
+    position: absolute;
+    top: 60px;
+    display: none;
+    margin: 0;
+    padding: 0;
+    /*width: 146px;*/
+    background-color: #f8f7f4;
+    border-radius: 10px;
+}
+
+.catalog a {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.catalog a:hover,
+.catalog a:focus {
+  border-radius: 0px;
+}
+
+.catalog a {
+    color: #323232;
+}
+
+.catalog a:hover {
+    background-color: #fbded7;
+}
+
+.first-item-catalog {
+    font-weight: 700;
+    border-bottom: 1px solid #d1d0ce;
+}
+
+.catalog .first-item-catalog:hover {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.catalog .last-item-catalog:hover {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.site-navigation > li:hover .catalog {
+    display: block;
+}
+
+.site-navigation > li {
+  padding-bottom: 10px;
+}
+
+.delivery-button {
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #a1b5aa;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 170px;
+}
+
+.about-button {
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #a1b5aa;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 120px;
+
+}
+
+.user-navigation {
+    display: flex;
+}
+
+.user-navigation svg {
+    fill: #ffffff;
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus {
+    background-color: #f8f7f4;
+    color: #000000;
+}
+
+a:hover svg {
+    fill: #000000;
+}
+
+.search-link {
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.search-link svg {
+    position: relative;
+    top: 8px;
+    left: 8px;
+}
+
+/*li > catalog:hover {
+    border-radius: 16px;
+}*/
+
+
