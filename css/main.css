@@ -1,15 +1,21 @@
 body {
     margin: 0;
     padding: 0;
-    width: 1200px;
 
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
     color: #ffffff;
+}
 
+.wrap-content {
+    width: 1200px;
+    margin: 0 auto;
     background-color: #849d8f;
+    background-image: url("img/product-1-slider.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
 }
 
 a {
