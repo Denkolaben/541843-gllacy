@@ -229,7 +229,7 @@ a {
 .user-navigation {
     display: flex;
     margin-top: 22px;
-    width: 250px;
+    width: 262px;
     margin-left: 370px;
     justify-content: space-between;
     padding-left: 0;
@@ -300,10 +300,20 @@ a:hover svg {
     border-radius: 17px;
     padding-top: 7px;
     padding-bottom: 1px;
-    padding-left: 15px;
+    padding-left: 20px;
     padding-right: 25px;
 }
 
+.header-info {
+    padding-left: 1010px;
+    font-size: 14px;
+    text-align: right;
+}
+
+.header-telephone {
+  color: #ffffff;
+  font-size: 22px;
+}
 
 
 /*li > catalog:hover {
