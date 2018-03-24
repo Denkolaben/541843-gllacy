@@ -306,13 +306,14 @@ a:hover svg {
 
 .header-info {
     padding-left: 1010px;
+    margin-top: -10px;
     font-size: 14px;
     text-align: right;
 }
 
 .header-telephone {
-  color: #ffffff;
-  font-size: 22px;
+    color: #ffffff;
+    font-size: 22px;
 }
 
 
