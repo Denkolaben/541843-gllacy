@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    width: 1200px;
 
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
@@ -90,7 +91,7 @@ a {
 
 
 
-.search-link {
+/*.search-link {
     display: block;
     width: 35px;
     height: 35px;
@@ -105,7 +106,7 @@ a {
 
 .user-navigation >li:hover .search-form {
     display: block;
-}
+}*/
 
 .login-form {
     position: absolute;
@@ -117,12 +118,13 @@ a {
 }
 
 .wrap-logo {
-  margin-top: 9px;
-  margin-left: 27px;
+    margin-top: 9px;
+    margin-left: 27px;
 }
 
 .main-header {
-  display: flex;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .site-navigation {
@@ -144,9 +146,9 @@ a {
     width: 87px;
 }
 
-.catalog-button::after {
+/*.catalog-button::after {
     content: "";
-}
+}*/
 
 .catalog {
     position: absolute;
@@ -226,6 +228,11 @@ a {
 
 .user-navigation {
     display: flex;
+    margin-top: 22px;
+    width: 250px;
+    margin-left: 370px;
+    justify-content: space-between;
+    padding-left: 0;
 }
 
 .user-navigation svg {
@@ -254,6 +261,50 @@ a:hover svg {
     top: 8px;
     left: 8px;
 }
+
+.search-form {
+    position: absolute;
+    display: none;
+    border: 1px solid #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #f8f7f4;
+    border-radius: 5px;
+    top: 60px;
+    left: 280px;
+}
+
+.search-form input {
+    width: 300px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.user-navigation >li:hover .search-form {
+    display: block;
+}
+
+.login-link {
+    display: block;
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.cart-link {
+    display: block;
+    border-radius: 17px;
+    padding-top: 7px;
+    padding-bottom: 1px;
+    padding-left: 15px;
+    padding-right: 25px;
+}
+
+
 
 /*li > catalog:hover {
     border-radius: 16px;
