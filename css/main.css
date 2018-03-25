@@ -23,8 +23,8 @@ body {
 .wrap-container {
     width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
-
+    padding: 0 27px;
+    box-sizing: border-box;
 }
 
 a {
@@ -126,8 +126,13 @@ a {
 }*/
 
 .login-form {
+    width: 277px;
     position: absolute;
     display: none;
+}
+
+.email[type="email"] {
+
 }
 
 .user-navigation >li:hover .login-form {
@@ -135,19 +140,23 @@ a {
 }
 
 .wrap-logo {
-    margin-top: 9px;
-    margin-left: 27px;
+/*    margin-top: 9px;*/
+/*    margin-left: 27px;*/
+    padding-top: 9px;
 }
 
 .main-header {
     display: flex;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
 
 .site-navigation {
-    width: 349px;
-    margin-top: 23px;
-    padding-left: 10px;
+    /*width: 349px;*/
+    /*margin-top: 23px;*/
+    padding-left: 8px;
+    padding-top: 25px;
+    margin: 0;
     display: flex;
     justify-content: space-between;
 }
@@ -244,13 +253,23 @@ a {
 
 }
 
+.interface-navigation {
+    margin-left: auto;
+}
+
 .user-navigation {
     display: flex;
-    margin-top: 22px;
-    width: 262px;
-    margin-left: 370px;
+/*    margin-top: 22px;*/
+/*    width: 262px;
+    margin-left: 370px;*/
     justify-content: space-between;
     padding-left: 0;
+    padding-top: 23px;
+    margin: 0;
+}
+
+.user-navigation.li:nth-child(2) {
+  padding-left: 10px;
 }
 
 .user-navigation svg {
@@ -271,10 +290,15 @@ a:hover svg {
     fill: #000000;
 }
 
+.search-icon {
+    position: relative;
+    padding-bottom: 5px;
+}
+
 .search-link {
     display: block;
-    width: 35px;
-    height: 35px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
 }
 
@@ -294,8 +318,8 @@ a:hover svg {
     padding-right: 15px;
     background-color: #f8f7f4;
     border-radius: 5px;
-    top: 60px;
-    left: 280px;
+    top: 40px;
+    left: -300px;
 }
 
 .search-form input {
@@ -311,26 +335,43 @@ a:hover svg {
 .login-link {
     display: block;
     border-radius: 15px;
-    padding-top: 5px;
-    padding-bottom: 3px;
+    padding-top: 6px;
+    padding-bottom: 1px;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.login-icon {
+    padding-left: 13px;
+}
+
+.login-form {
+    border: 1px solid #000000;
 }
 
 .cart-link {
     display: block;
     border-radius: 17px;
     padding-top: 7px;
-    padding-bottom: 1px;
-    padding-left: 20px;
+    padding-bottom: 0px;
+    padding-left: 22px;
     padding-right: 25px;
 }
 
+.cart-icon {
+    padding-left: 15px;
+}
+
 .header-info {
-    padding-left: 1010px;
+/*    padding-left: 1010px;
     margin-top: -11px;
     font-size: 14px;
-    text-align: right;
+    text-align: right*/
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin: 0;
+    flex-direction: column;
 }
 
 .header-telephone {
@@ -340,17 +381,17 @@ a:hover svg {
 
 .site-wrapper::before,
 .site-wrapper::after {
-  content: "";
+    content: "";
 
-  visibility: hidden;
+    visibility: hidden;
 }
 
 .site-wrapper::before {
-  background-image: url("../img/product-2-slider.png");
+    background-image: url("../img/product-2-slider.png");
 }
 
 .site-wrapper::after {
-  background-image: url("../img/product-3-slider.png");
+    background-image: url("../img/product-3-slider.png");
 }
 
 .slider {
@@ -391,7 +432,7 @@ a:hover svg {
     font-weight: 600;
     font-size: 31px;
     line-height: 41px;
-    text-align: xenter;
+    text-align: center;
     color: #ffffff;
     vertical-align: top;
     text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
@@ -411,6 +452,13 @@ a:hover svg {
 .button:active {
     background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
     box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.button.main-button {
+    font-size: 18px;
+    line-height: 24px;
+
+    padding: 10px 40px;
 }
 
 .slider-controls {
