@@ -10,7 +10,7 @@ body {
 }
 
 .site-wrapper {
-    width: 1200px;
+    min-width: 1200px;
     margin: 0 auto;
     background-color: #849d8f;
     background-image: url("../img/product-1-slider.png");
@@ -136,7 +136,7 @@ a {
 
 .wrap-logo {
     margin-top: 9px;
-    margin-left: 7px;
+    margin-left: 27px;
 }
 
 .main-header {
@@ -327,8 +327,8 @@ a:hover svg {
 }
 
 .header-info {
-    padding-left: 990px;
-    margin-top: -10px;
+    padding-left: 1010px;
+    margin-top: -11px;
     font-size: 14px;
     text-align: right;
 }
@@ -357,7 +357,7 @@ a:hover svg {
     position: relative;
 
     padding-top: 265px;
-    padding-right: 40px;
+    /*padding-right: 40px;*/
 
     text-align: center;
     color: #ffffff;
@@ -415,8 +415,8 @@ a:hover svg {
 
 .slider-controls {
     position: absolute;
-    bottom: 63px;
-    left: 0;
+    bottom: 21px;
+    left: 29px;
     z-index: 20;
 
     font-size: 0;
