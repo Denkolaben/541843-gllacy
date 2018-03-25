@@ -274,10 +274,12 @@ a {
 
 .user-navigation svg {
     fill: #ffffff;
+    vertical-align: top;
 }
 
 .user-navigation a {
     background-color: rgba(255, 255, 255, 0.2);
+    font-size: 14px;
 }
 
 .user-navigation a:hover,
@@ -336,13 +338,13 @@ a:hover svg {
     display: block;
     border-radius: 15px;
     padding-top: 6px;
-    padding-bottom: 1px;
-    padding-left: 15px;
+    padding-bottom: 3px;
+    padding-left: 22px;
     padding-right: 15px;
 }
 
 .login-icon {
-    padding-left: 13px;
+    padding-left: 11px;
 }
 
 .login-form {
@@ -359,7 +361,7 @@ a:hover svg {
 }
 
 .cart-icon {
-    padding-left: 15px;
+    padding-left: 18px;
 }
 
 .header-info {
@@ -368,10 +370,12 @@ a:hover svg {
     font-size: 14px;
     text-align: right*/
     display: flex;
+    align-items: flex-end;
     width: 100%;
-    margin-left: auto;
     margin: 0;
     flex-direction: column;
+    font-size: 14px;
+    margin-top: -10px;
 }
 
 .header-telephone {
@@ -397,7 +401,7 @@ a:hover svg {
 .slider {
     position: relative;
 
-    padding-top: 265px;
+    padding-top: 280px;
     /*padding-right: 40px;*/
 
     text-align: center;
@@ -463,8 +467,7 @@ a:hover svg {
 
 .slider-controls {
     position: absolute;
-    bottom: 21px;
-    left: 29px;
+    bottom: 20px;
     z-index: 20;
 
     font-size: 0;
@@ -511,6 +514,9 @@ a:hover svg {
     background-color: #ffffff;
 }
 
+.wrap-promo {
+    display: flex;
+}
 
 
 /*li > catalog:hover {
