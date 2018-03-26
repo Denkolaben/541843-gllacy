@@ -125,23 +125,30 @@ a {
     display: block;
 }*/
 
+.wrap-login-form {
+    display: flex;
+    flex-direction: column;
+}
+
 .login-form {
     /*width: 277px;*/
     position: absolute;
-    left: 750px;
-    /*display: none;*/
+    top: 60px;
+    left: 882px;
+    display: none;
     background-color: #f8f7f4;
-    border-radius: 13px;
+    border-radius: 4px;
     padding-top: 20px;
     padding-left: 19px;
-    padding-right: 19px;
+    padding-right: 16px;
+    padding-bottom: 19px;
 }
 
 .email-input[type="email"] {
     width: 241px;
     margin-bottom: 20px;
     padding-top: 12px;
-    padding-bottom: 11px;
+    padding-bottom: 15px;
     padding-left: 15px;
     font-size: 14px;
     border: 1px solid #999999;
@@ -159,6 +166,30 @@ a {
     border: 1px solid #999999;
     border-radius: 4px;
     box-sizing: border-box;
+}
+
+.wrap-login-button {
+    display: flex;
+}
+
+.button.login-button {
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 23px;
+    padding-right: 26px;
+    margin-right: auto;
+}
+
+.wrap-login-links {
+    display: flex;
+    flex-direction: column;
+    padding-right: 5px;
+}
+
+.wrap-login-button .wrap-login-links a {
+    font-size: 13px;
+    color: #000000;
+    text-decoration: underline;
 }
 
 .user-navigation >li:hover .login-form {
@@ -373,9 +404,9 @@ a:hover svg {
     padding-left: 11px;
 }
 
-.login-form {
+/*.login-form {
     border: 1px solid #000000;
-}
+}*/
 
 .cart-link {
     display: block;
