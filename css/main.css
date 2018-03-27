@@ -131,10 +131,10 @@ a {
 }
 
 .login-form {
-    /*width: 277px;*/
     position: absolute;
-    top: 60px;
-    left: 882px;
+    display: block;
+    top: 35px;
+    left: -170px;
     display: none;
     background-color: #f8f7f4;
     border-radius: 4px;
@@ -149,7 +149,7 @@ a {
     width: 241px;
     margin-bottom: 20px;
     padding-top: 12px;
-    padding-bottom: 15px;
+    padding-bottom: 13px;
     padding-left: 15px;
     font-size: 14px;
     border: 1px solid #999999;
@@ -161,7 +161,7 @@ a {
     width: 241px;
     margin-bottom: 20px;
     padding-top: 12px;
-    padding-bottom: 11px;
+    padding-bottom: 13px;
     padding-left: 15px;
     font-size: 14px;
     border: 1px solid #999999;
@@ -404,6 +404,7 @@ a:hover svg {
 
 .login-icon {
     padding-left: 11px;
+    position: relative;
 }
 
 /*.login-form {
@@ -573,8 +574,50 @@ a:hover svg {
     background-color: #ffffff;
 }
 
-.wrap-promo {
+/*.wrap-promo {
     display: flex;
+}*/
+
+.promo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 42px;
+}
+
+.promo-wrap {
+    display: flex;
+    flex-direction: column;
+    padding-top: 18px;
+    padding-bottom: 23px;
+    padding-left: 20px;
+    padding-right: 39px;
+    background-image: url("../img/Raspberry-background.jpg");
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.promo h3 {
+    font-size: 35px;
+    line-height: 41px;
+    margin: 0;
+}
+
+.promo p {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 47px;
+}
+
+.promo-wrap.promo-second {
+    background-image: url("../img/Chocolate-background.jpg");
+}
+
+.promo-wrap .button {
+    align-self: flex-end;
+    padding-left: 0px;
+    padding-right: 50px;
 }
 
 
