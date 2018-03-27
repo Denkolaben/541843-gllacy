@@ -49,25 +49,10 @@ a {
     list-style: none;
 }
 
-/*.site-navigation a {
-    display: inline-block;
-    vertical-align: middle;
-}*/
-
-/*.catalog-button:hover {
-    width: 87px;
-    background-color: #f7f6f3;
-    border-radius: 50%;
-}*/
-
 .site-navigation a,
 .user-navigation a {
     color: #ffffff;
 }
-
-/*.site-navigation > li > a {
-    border-bottom: 1px solid #adbdb4;
-}*/
 
 .site-navigation a:hover,
 .site-navigation a:focus {
@@ -88,42 +73,9 @@ a {
     border-bottom: none;
 }
 
-
-
 .catalog a:active {
     background-color: #f6b5a5;
 }
-
-/*.user-navigation a {
-    background-color: #a1b6aa;
-}*/
-
-
-
-/*.user-navigation a:hover,
-.user-navigation a:focus {
-    background-color: #f8f7f4;
-    color: #000000;
-}*/
-
-
-
-/*.search-link {
-    display: block;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-}
-
-
-
-.search-form {
-    display: none;
-}
-
-.user-navigation >li:hover .search-form {
-    display: block;
-}*/
 
 .wrap-login-form {
     display: flex;
@@ -198,8 +150,6 @@ a {
 }
 
 .wrap-logo {
-/*    margin-top: 9px;*/
-/*    margin-left: 27px;*/
     padding-top: 9px;
 }
 
@@ -210,8 +160,6 @@ a {
 }
 
 .site-navigation {
-    /*width: 349px;*/
-    /*margin-top: 23px;*/
     padding-left: 8px;
     padding-top: 25px;
     margin: 0;
@@ -230,17 +178,12 @@ a {
     width: 87px;
 }
 
-/*.catalog-button::after {
-    content: "";
-}*/
-
 .catalog {
     position: absolute;
     top: 60px;
     display: none;
     margin: 0;
     padding: 0;
-    /*width: 146px;*/
     background-color: #f8f7f4;
     border-radius: 10px;
     z-index: 2;
@@ -317,9 +260,6 @@ a {
 
 .user-navigation {
     display: flex;
-/*    margin-top: 22px;*/
-/*    width: 262px;
-    margin-left: 370px;*/
     justify-content: space-between;
     padding-left: 0;
     padding-top: 23px;
@@ -352,7 +292,7 @@ a:hover svg {
 
 .search-icon {
     position: relative;
-    padding-bottom: 5px;
+    padding-bottom: 7px;
 }
 
 .search-link {
@@ -407,10 +347,6 @@ a:hover svg {
     position: relative;
 }
 
-/*.login-form {
-    border: 1px solid #000000;
-}*/
-
 .cart-link {
     display: block;
     border-radius: 17px;
@@ -425,10 +361,6 @@ a:hover svg {
 }
 
 .header-info {
-/*    padding-left: 1010px;
-    margin-top: -11px;
-    font-size: 14px;
-    text-align: right*/
     display: flex;
     align-items: flex-end;
     width: 100%;
@@ -462,7 +394,7 @@ a:hover svg {
     position: relative;
 
     padding-top: 280px;
-    /*padding-right: 40px;*/
+
 
     text-align: center;
     color: #ffffff;
@@ -574,10 +506,6 @@ a:hover svg {
     background-color: #ffffff;
 }
 
-/*.wrap-promo {
-    display: flex;
-}*/
-
 .promo {
     display: flex;
     justify-content: space-between;
@@ -585,15 +513,17 @@ a:hover svg {
 }
 
 .promo-wrap {
+    width: 560px;
     display: flex;
     flex-direction: column;
     padding-top: 18px;
     padding-bottom: 23px;
     padding-left: 20px;
-    padding-right: 39px;
+    padding-right: 21px;
     background-image: url("../img/Raspberry-background.jpg");
     background-repeat: no-repeat;
     border-radius: 15px;
+    box-sizing: border-box;
 }
 
 .promo h3 {
@@ -616,13 +546,6 @@ a:hover svg {
 
 .promo-wrap .button {
     align-self: flex-end;
-    padding-left: 0px;
-    padding-right: 50px;
+    padding-left: 22px;
+    padding-right: 22px;
 }
-
-
-/*li > catalog:hover {
-    border-radius: 16px;
-}*/
-
-
