@@ -627,6 +627,86 @@ a:hover svg {
     margin-bottom: 8px;
 }
 
-.test {
-    margin-left: 0px;
+.wrap-blog-newsletter {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 42px;
+    margin-bottom: 42px;
 }
+
+.blog {
+    width: 560px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 23px;
+    padding-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 30px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    line-height: 22px;
+    background-image: url("../img/blog-background.jpg");
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.blog h2 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.blog a {
+    color: #000000;
+    text-decoration: underline;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    width: 281px;
+}
+
+.newsletter-background {
+    background-image: url("../img/newsletter-background.jpg");
+    padding: 6px;
+    border-radius: 15px;
+}
+
+.newsletter p {
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.newsletter {
+    width: 560px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: #f8f7f4;
+    color: #5a5a5a;
+    padding-left: 20px;
+    padding-top: 33px;
+    padding-right: 22px;
+    box-sizing: border-box;
+}
+
+.email-newsletter[type="email"] {
+    width: 378px;
+    margin-bottom: 20px;
+    padding-top: 12px;
+    padding-bottom: 13px;
+    padding-left: 15px;
+    font-size: 14px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.newsletter .button {
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
