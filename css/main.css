@@ -713,3 +713,44 @@ a:hover svg {
     vertical-align: baseline;
 }
 
+.map {
+    position: relative;
+}
+
+.information-section {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fefefe;
+    color: #000000;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 15px;
+    padding-top: 30px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.information-section p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.information-section .information-first-p {
+    margin-bottom: 2px;
+}
+
+.information-section b {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.information-section .button {
+    padding-left: 19px;
+    padding-right: 19px;
+}
+
