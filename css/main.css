@@ -350,8 +350,8 @@ a:hover svg {
 .cart-link {
     display: block;
     border-radius: 17px;
-    padding-top: 7px;
-    padding-bottom: 0px;
+    padding-top: 5px;
+    padding-bottom: 3px;
     padding-left: 22px;
     padding-right: 25px;
 }
@@ -510,6 +510,7 @@ a:hover svg {
     display: flex;
     justify-content: space-between;
     margin-top: 42px;
+    margin-bottom: 42px;
 }
 
 .promo-wrap {
@@ -548,4 +549,54 @@ a:hover svg {
     align-self: flex-end;
     padding-left: 22px;
     padding-right: 22px;
+}
+
+.assortment {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-item {
+    position: relative;
+    width: 267px;
+}
+
+.product-item img {
+    border-radius: 50%;
+}
+
+.hit-pin {
+    position: absolute;
+    top: -2px;
+}
+
+.product-item p {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 700;
+    word-spacing: -7px;
+    margin: 0;
+    margin-top: -65px;
+    margin-bottom: 20px;
+}
+
+.product-item svg {
+    vertical-align: middle;
+}
+
+.product-item span {
+    font-size: 30px;
+}
+
+.product-item h3 {
+    text-align: center;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration: underline;
+    font-weight: 400;
+    margin: 0;
+}
+
+.product-item a {
+    color: #ffffff;
 }
