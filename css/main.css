@@ -554,6 +554,7 @@ a:hover svg {
 .assortment {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 .product-item {
@@ -599,4 +600,33 @@ a:hover svg {
 
 .product-item a {
     color: #ffffff;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    background-color: #ede1cb;
+    background-image: url("../img/Waffle-pattern.jpg");
+    color: #000000;
+}
+
+.about-info {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+
+.about-advantage {
+    margin-left: 0px;
+    width: 482px;
+    margin-bottom: 8px;
+}
+
+.test {
+    margin-left: 0px;
 }
