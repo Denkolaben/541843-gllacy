@@ -631,7 +631,7 @@ a:hover svg {
     display: flex;
     justify-content: space-between;
     margin-top: 42px;
-    margin-bottom: 42px;
+    padding-bottom: 40px;
 }
 
 .blog {
@@ -713,8 +713,14 @@ a:hover svg {
     vertical-align: baseline;
 }
 
+.map-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
 .map {
     position: relative;
+    height: 429px;
 }
 
 .information-section {
@@ -724,8 +730,8 @@ a:hover svg {
     background-color: #fefefe;
     color: #000000;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 60px;
+    right: 30px;
     border-radius: 15px;
     padding-top: 30px;
     padding-right: 25px;
@@ -749,8 +755,45 @@ a:hover svg {
     line-height: 24px;
 }
 
+.adress-b {
+    margin-bottom: 15px;
+}
+
+.phone-number {
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #000000;
+}
+
 .information-section .button {
+    margin-top: 28px;
     padding-left: 19px;
     padding-right: 19px;
 }
 
+.site-wrapper-footer {
+    min-width: 1200px;
+    margin: 0 auto;
+    background-color: #849d8f;
+}
+
+.wrap-container-footer {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 27px;
+    box-sizing: border-box;
+}
+
+#product-1:checked ~ .site-wrapper-footer {
+    background-color: #849d8f;
+}
+
+#product-2:checked ~ .site-wrapper-footer {
+    background-color: #8996a6;
+}
+
+#product-3:checked ~ .site-wrapper-footer {
+    background-color: #9d8b84;
+}
