@@ -797,3 +797,65 @@ a:hover svg {
 #product-3:checked ~ .site-wrapper-footer {
     background-color: #9d8b84;
 }
+
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-networking {
+    display: flex;
+    width: 186px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-top: 30px;
+    padding-right: 30px;
+    list-style: none;
+    margin: 0;
+}
+
+.social-button-li {
+    border: 4px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    height: 32px;
+}
+
+.information-links {
+    display: flex;
+    width: 371px;
+    justify-content: flex-start;
+    padding-top: 37px;
+    padding-right: 10px;
+}
+
+.wrap-information-column {
+    display: flex;
+    flex-direction: column;
+    padding-left: 7px;
+}
+
+.wrap-information-column.second {
+    padding-left: 30px;
+}
+
+.information-links a {
+    text-align: left;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 18px;
+    text-decoration: underline;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.copyright p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 18px;
+}
