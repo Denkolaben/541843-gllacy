@@ -3,60 +3,72 @@
   <head>
     <meta charset="utf-8">
     <title>Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
 
-    <header class="main-header">
-      <a href="index.html" class="logo">
-        <svg width="154" height="64"><use xlink:href="#logo"/></svg>
-      </a>
-      <nav class="main-navigation">
-        <ul class="site-navigation">
-          <li><a class="active-link" href="#">Каталог</a></li>
-          <li><a href="#">Доставка и оплата</a></li>
-          <li><a href="#">О компании</a></li>
-        </ul>
-      </nav>
-      <nav class="interface-navigation">
-        <ul class="user-navigation">
-           <li><a class="search-link" href="#">
-               <svg width="17" height="17"><use xlink:href="#magnifier-icon"/></svg>
-               </a>
-               <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-                 <label>Что ищем?<input name="search-window" placeholder="Что ищем?" type="search"></label>
-                 <button class="visually-hidden" type="submit"></button>
-               </form>
-           </li>
-           <li><a class="login-link" href="#">
-                 <svg width="21" height="19"><use xlink:href="#enter-icon"/></svg>
-                 Вход
-                 </a>
-                 <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-                   <label>Электронная почта<input name="email" type="email" placeholder="Электронная почта"></label>
-                   <label>Пароль<input name="password" type="password" placeholder="Пароль"></label>
-                   <button class="button main-button" type="submit">Войти</button>
-                   <a href="#">Забыли пароль?</a>
-                   <a href="#">Новая регистрация</a>
-                </form>
-           </li>
-           <li><a class="cart-link" href="#">
-             <svg width="21" height="20"><use xlink:href="#cart-icon"/></svg>
-             2 товара</a>
-             <section class="cart-detailed">
-               <h2>Корзина</h2>
-               <p><span>X</span><img src="img/1-row-1-icecream.jpg" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"> Пломбир с апельсиновым джемом 1,5 кг х <span>200 руб.</span> 300 руб.</p>
-               <p><span>X</span><img src="img/1-row-3-icecream.jpg" width="33" height="33" alt="Сливочно-клубничное с присыпкой из белого шоколада"> Клубничный пломбир с присыпкой из белого шоколада 1,5 кг х <span>300 руб.</span> 450 руб.</p>
-               <hr>
-               <b>Итого: 750 руб.</b>
-               <a class="button main-button" href="#">Оформить заказ</a>
-             </section>
-           </li>
-        </ul>
-      </nav>
-      <p>С 10 до 20, ежедневно
-      <a href="tel:88124502525">8 812 450-25-25</a></p>
-    </header>
+    <div class="site-wrapper inner">
+      <div class="wrap-container">
+
+        <header class="main-header">
+          <div class="wrap-logo">
+            <a class="logo">
+              <svg width="154" height="64"><use xlink:href="#logo"/></svg>
+            </a>
+          </div>
+          <nav class="main-navigation">
+            <ul class="site-navigation">
+              <li><a class="catalog-button" href="#">Каталог</a>
+                    <ul class="catalog">
+                      <li><a class="first-item-catalog" href="#">Новинки</a></li>
+                      <li><a href="inner.html">Сливочное</a></li>
+                      <li><a href="#">Щербеты</a></li>
+                      <li><a href="#">Фруктовый лед</a></li>
+                      <li><a class="last-item-catalog" href="#">Мелорин</a></li>
+                    </ul>
+              </li>
+              <li><a class="delivery-button" href="#">Доставка и оплата</a></li>
+              <li class="border-test"><a class="about-button" href="#">О Компании</a></li>
+            </ul>
+          </nav>
+          <nav class="interface-navigation">
+            <ul class="user-navigation">
+              <li class="search-icon"><a class="search-link" href="#">
+                  <svg width="17" height="17"><use xlink:href="#magnifier-icon"/></svg>
+                  </a>
+                  <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+                    <label><input name="search-window" placeholder="Что ищем?" type="search"></label>
+                    <button class="visually-hidden" type="submit"></button>
+                  </form>
+              </li>
+              <li class="login-icon"><a class="login-link" href="#">
+                    <svg width="21" height="19"><use xlink:href="#enter-icon"/></svg>
+                    Вход
+                    </a>
+                    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                      <div class="wrap-login-form">
+                        <label><input class="email-input" name="email" type="email" placeholder="Электронная почта"></label>
+                        <label><input class="password-input" name="password" type="password" placeholder="Пароль"></label>
+                      </div>
+                      <div class="wrap-login-button">
+                        <button class="button login-button" type="submit">Войти</button>
+                      <div class="wrap-login-links">
+                        <a class="login-form-link" href="#">Забыли пароль?</a>
+                        <a class="login-form-link" href="#">Новая регистрация</a>
+                      </div>
+                      </div>
+                    </form>
+              </li>
+              <li class="cart-icon"><a class="cart-link" href="#">
+                <svg width="21" height="20"><use xlink:href="#cart-icon"/></svg>
+                Пусто</a></li>
+             </ul>
+          </nav>
+          <p class="header-info">С 10 до 20, ежедневно
+          <a class="header-telephone" href="tel:88124502525">8 812 450-25-25</a></p>
+        </header>
 
     <main class="container">
 
@@ -139,79 +151,79 @@
         </form>
       </section>
 
-      <section class="assortment">
+      <section class="assortment inner">
         <h2 class="visually-hidden">Ассортимент сливочного мороженого</h2>
 
-        <article>
+        <article class="product-item">
           <img src="img/1-row-1-icecream.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           <p>310 <svg width="31" height="36"><use xlink:href="#ruble-icon"/></svg> / <span>кг</span></p>
-          <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+          <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
         </article>
 
-        <article>
+        <article class="product-item">
           <img src="img/1-row-2-icecream.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
           <p>380 <svg width="31" height="36"><use xlink:href="#ruble-icon"/></svg> / <span>кг</span></p>
-          <h3>Сливочно-кофейное с кусочками шоколада</h3>
+          <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
         </article>
 
-        <article>
+        <article class="product-item">
           <img src="img/1-row-3-icecream.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
           <p>355 <svg width="31" height="36"><use xlink:href="#ruble-icon"/></svg> / <span>кг</span></p>
-          <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+          <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
         </article>
 
-        <article>
+        <article class="product-item">
           <img src="img/1-row-4-icecream.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
           <p>415 <svg width="31" height="36"><use xlink:href="#ruble-icon"/></svg> / <span>кг</span></p>
-          <h3>Сливочное крем-брюле с карамельной подливкой</h3>
+          <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
         </article>
 
-        <article>
+        <article class="product-item">
           <img src="img/2-row-1-icecream.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
           <p>325 <svg width="31" height="36"><use xlink:href="#ruble-icon"/></svg> / <span>кг</span></p>
-          <h3>Сливочное с брусничным джемом</h3>
+          <h3><a href="#">Сливочное с брусничным джемом</a></h3>
         </article>
 
-        <article>
+        <article class="product-item">
           <img src="img/2-row-2-icecream.jpg" width="267" height="267" alt="Cливочно-черничное с цельными ягодами черники">
           <p>410 <svg width="31" height="36"><use xlink:href="#ruble-icon"/></svg> / <span>кг</span></p>
-          <h3>Сливочно-черничное с цельными ягодами черники</h3>
+          <h3><a href="#">Сливочно-черничное с цельными ягодами черники</a></h3>
         </article>
 
-        <article>
+        <article class="product-item">
           <img src="img/2-row-3-icecream.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
           <p>375 <svg width="31" height="36"><use xlink:href="#ruble-icon"/></svg> / <span>кг</span></p>
-          <h3>Сливочно-лимонное с карамельной присыпкой</h3>
+          <h3><a href="#">Сливочно-лимонное с карамельной присыпкой</a></h3>
         </article>
 
-        <article>
+        <article class="product-item">
           <img src="img/2-row-4-icecream.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
           <p>320 <svg width="31" height="36"><use xlink:href="#ruble-icon"/></svg> / <span>кг</span></p>
-          <h3>Сливочное с шоколадной стружкой</h3>
+          <h3><a href="#">Сливочное с шоколадной стружкой</a></h3>
         </article>
 
-        <article>
+        <article class="product-item">
           <img src="img/3-row-1-icecream.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
           <p>440 <svg width="31" height="36"><use xlink:href="#ruble-icon"/></svg> / <span>кг</span></p>
-          <h3>Сливочно-ванильное с кусочками шоколада</h3>
+          <h3><a href="#">Сливочно-ванильное с кусочками шоколада</a></h3>
         </article>
 
-        <article>
+        <article class="product-item">
           <img src="img/3-row-2-icecream.jpg" width="267" height="267" alt="Сливочноe с ментоловым сиропом">
           <p>435 <svg width="31" height="36"><use xlink:href="#ruble-icon"/></svg> / <span>кг</span></p>
-          <h3>Сливочноe с ментоловым сиропом</h3>
+          <h3><a href="#">Сливочноe с ментоловым сиропом</a></h3>
         </article>
 
-        <article>
+        <article class="product-item">
           <img src="img/3-row-3-icecream.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
           <p>355 <svg width="31" height="36"><use xlink:href="#ruble-icon"/></svg> / <span>кг</span></p>
-          <h3>Сливочное с кусочками черного шоколада</h3>
+          <h3><a href="#">Сливочное с кусочками черного шоколада</a></h3>
         </article>
 
-        <article>
+        <article class="product-item">
           <img src="img/3-row-4-icecream.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
           <p>420 <svg width="31" height="36"><use xlink:href="#ruble-icon"/></svg> / <span>кг</span></p>
-          <h3>Сливочное с мятным сиропом</h3>
+          <h3><a href="#">Сливочное с мятным сиропом</a></h3>
         </article>
 
         <ul class="assortment-page">
@@ -224,32 +236,44 @@
       </section>
     </main>
 
-    <footer class="main-footer">
-      <ul>
-        <li><a class="social-button" aria-label="Твиттер" href="#">
-          <svg width="32" height="32"><use xlink:href="#twitter"/></svg>
-        </a></li>
-        <li><a class="social-button" aria-label="Инстаграм" href="#">
-          <svg width="32" height="32"><use xlink:href="#instagram"/></svg>
-        </a></li>
-        <li><a class="social-button" aria-label="Фэйсбук" href="#">
-          <svg width="32" height="32"><use xlink:href="#facebook"/></svg>
-        </a></li>
-        <li><a class="social-button" aria-label="Вконтакте" href="#">
-          <svg width="32" height="32"><use xlink:href="#vkontakte"/></svg>
-        </a></li>
-      </ul>
-      <p>
-        <svg width="15" height="13"><use xlink:href="#heart-pin"/></svg><a href="#">Для поставщиков</a>
-        <a href="#">Наши документы</a>
-        <a href="#">О производстве</a>
-        <a href="#">Экологические стандарты</a>
-      </p>
-      <p>
-        <svg width="108" height="39"><use xlink:href="#htmlacademy-logo"/></svg>
-        <span>Сделано в</span> <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-      </p>
-    </footer>
+      <div class="wrap-container-footer">
+        <footer class="main-footer">
+          <ul class="social-networking">
+            <li class="social-button-li"><a class="social-button" aria-label="Твиттер" href="#">
+              <svg width="32" height="32"><use xlink:href="#twitter"/></svg>
+            </a></li>
+            <li class="social-button-li"><a class="social-button" aria-label="Инстаграм" href="#">
+              <svg width="32" height="32"><use xlink:href="#instagram"/></svg>
+            </a></li>
+            <li class="social-button-li"><a class="social-button" aria-label="Фэйсбук" href="#">
+              <svg width="32" height="32"><use xlink:href="#facebook"/></svg>
+            </a></li>
+            <li class="social-button-li"><a class="social-button" aria-label="Вконтакте" href="#">
+              <svg width="32" height="32"><use xlink:href="#vkontakte"/></svg>
+            </a></li>
+          </ul>
+          <section class="information-links">
+            <h2 class="visually-hidden">Информационные ссылки</h2>
+            <svg width="15" height="13"><use xlink:href="#heart-pin"/></svg>
+            <div class="wrap-information-column">
+              <a href="#">Для поставщиков</a>
+              <a class="production-link" href="#">О производстве</a>
+            </div>
+            <div class="wrap-information-column second">
+              <a href="#">Наши документы</a>
+              <a href="#">Экологические стандарты</a>
+            </div>
+          </section>
+          <section class="copyright">
+            <h2 class="visually-hidden">Копирайт</h2>
+            <svg width="108" height="39"><use xlink:href="#htmlacademy-logo"/></svg>
+            <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
+          </section>
+        </footer>
+      </div>
+
+    </div>
+      </div>
 
     <svg style="display: none">
 
